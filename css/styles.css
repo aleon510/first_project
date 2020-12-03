@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-width: 900px;
+  max-width: auto;
+}
+body,
+html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+:root {
+  --primary-color: #999997;
+  --secondary-color: #000000;
+  --primary-text-color: #999997;
+}
+header {
+  color: var(--primary-color);
+}
+
+/***********************
+*Header & Paragraph 
+***********************/
+h2 {
+  text-align: center;
+  font: var(--primary-font-family);
+  color: var(--primary-color);
+}
+
+h1 {
+  height: 200px;
+  width: 700px;
+  transform: translatey(50%);
+  color: var(--primary-color);
+}
+/***********************
+* Grid System: columns of 1/2, 1/3, and 1/4 width
+***********************/
+.row {
+  display: block;
+}
+.row:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.col {
+  float: left;
+}
+
+.col-1-2 {
+  width: 50%;
+}
+
+.col-1-3 {
+  width: 33.33%;
+  height: 600px;
+}
+
+.col-image {
+  position: relative;
+  background-image: url('../img/gts_model.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.col2-image {
+  position: relative;
+  background-image: url('../img/Adrian-Lazaro.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.col3-image {
+  position: relative;
+  background-image: url('../img/Rose.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/***********************
+*Navbar
+***********************/
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  background-color: rgb(17, 17, 17);
+  z-index: 100;
+}
+
+.nav-logo {
+  color: white;
+  font-size: 1.1em;
+  height: 75px;
+  width: 75px;
+}
+
+.navbar {
+  list-style-type: none;
+  text-align: right;
+  font-size: 1.1em;
+}
+
+.nav-item {
+  display: inline-block;
+  padding: 1.5em 1.5em;
+  height: 100%;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-link:hover {
+  color: white;
+}
+/*********************
+* Hero Banner
+*********************/
+#hero {
+  position: relative;
+  height: 37em;
+  width: 100%;
+  background-image: url('../img/gts-studio.webp');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#hero:after {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgb(46, 46, 46);
+  opacity: 0.7;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--primary-text-color);
+  z-index: 1;
+}
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: #000000;
+  background-color: #e0b72f;
+  text-align: center;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #000000;
+  color: #e0b72f;
+}
+/***********************
+*text
+***********************/
+.text-button-center {
+  position: absolute;
+  top: 65%;
+  transform: translatex(100%);
+}
+
+/***********************
+*Footer
+***********************/
+footer {
+  background-color: var(--secondary-color);
+}
+.contact-info-wrapper {
+  height: 304px;
+  width: 100%;
+}
+.contact-info {
+  list-style-type: none;
+  color: white;
+}
+.contact-info li {
+  margin-bottom: 25px;
+}
+.contact-info li:last-of-type {
+  margin-bottom: 0;
+}
+.contact-info a {
+  text-decoration: none;
+  color: white;
+}
+.contact-info i {
+  display: inline-block;
+  width: 40px;
+  font-size: 24px;
+}
+.icon-wrapper {
+  height: 68px;
+  background-color: #000000;
+  color: white;
+}
+.icon {
+  top: 50%;
+  text-align: center;
+  font-size: 18px;
+}
+.vertical-center-wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.foot-logo {
+  height: 400px;
+  width: 400px;
+  opacity: 0.4;
+}
