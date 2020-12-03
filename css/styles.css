@@ -15,10 +15,7 @@ html {
 :root {
   --primary-color: #999997;
   --secondary-color: #000000;
-  --primary-text-color: #999997;
-}
-header {
-  color: var(--primary-color);
+  --primary-text-color: #5c5c56;
 }
 
 /***********************
@@ -28,6 +25,8 @@ h2 {
   text-align: center;
   font: var(--primary-font-family);
   color: var(--primary-color);
+  font-weight: bold;
+  font-size: 18px;
 }
 
 h1 {
@@ -161,6 +160,7 @@ button {
   background-color: #e0b72f;
   text-align: center;
   cursor: pointer;
+  font-weight: bold;
 }
 button:hover {
   background-color: #000000;
